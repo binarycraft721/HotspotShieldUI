@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotspot Shield Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .logout-button {
+      background-color: #00ff00;
+      color: #000;
+    }
+
+    .section-container {
+      margin-bottom: 20px;
+      border: 2px solid #00ff00;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    .btn-primary {
+      background-color: #00ff00;
+      border-color: #00ff00;
+    }
+
+    .btn-danger {
+      background-color: #ff0000;
+      border-color: #ff0000;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Hotspot Shield Dashboard</h1>
+      <button id="logout-button" class="btn btn-secondary logout-button">Logout</button>
+    </div>
+
+    <div class="row section-container">
+      <div class="col-md-6">
+        <section id="locations">
+          <h2>Locations</h2>
+          <div id="location-list">
+            <select id="locations-select" class="form-control"></select>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <section id="control">
+          <h2>Control</h2>
+          <button id="start-button" class="btn btn-primary">Start</button>
+          <button id="stop-button" class="btn btn-danger">Stop</button>
+        </section>
+      </div>
+    </div>
+
+    <div class="row section-container">
+      <div class="col-md-6">
+        <section id="status">
+          <h2>Connection Status</h2>
+          <div id="status-info"></div>
+        </section>
+      </div>
+      <div class="col-md-6">
+        <section id="account">
+          <h2>Account Info</h2>
+          <div id="account-info"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

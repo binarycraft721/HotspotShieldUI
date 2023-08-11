@@ -1,0 +1,28 @@
+{
+  "name": "hotspotshieldui",
+  "author": {
+    "name": "Binary Craft",
+    "email": "binarycraft721@gmail.com"
+  },
+  "homepage": "https://binarycraft.com",
+  "version": "1.0.2",
+  "description": "Electron application that interacts with the Hotspot Shield CLI",
+  "main": "main.js",
+  "build": {
+    "productName": "Hotspot Shield Dashboard",
+    "icon": "favicon.png",
+    "linux": {
+      "category": "Utility"
+    }
+  },
+  "program": "${workspaceFolder}/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.4.0",
+    "electron-packager": "^17.1.1"
+  }
+}

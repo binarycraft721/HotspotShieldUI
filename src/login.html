@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #login-form {
+      text-align: center;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 5px;
+      width: 200px;
+    }
+
+    input[type="submit"] {
+      padding: 8px 20px;
+      background-color: #00ff00;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    #login-result {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login to Hotspot Shield</h1>
+  <form id="login-form">
+    <p style="color: red;" id="login-result"></p>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br>
+    <input type="checkbox" id="remember-me" name="remember-me">
+    <label for="remember-me">Remember Me</label><br>
+    <input type="submit" value="Login">
+  </form>
+
+  <script src="login.js"></script>
+</body>
+</html>
