@@ -24,70 +24,9 @@ We are building a desktop application using Electron that interacts with the Hot
 
 ## **Pre-requisites**
 
-### **Installing Node.js and npm**
-
-You can download Node.js and npm from the official **[Node.js website](https://nodejs.org/)**. Choose the version suitable for your system and follow the installation instructions. Or you can do using the terminal
-
-```bash
-sudo apt update
-sudo apt-get install nodejs
-sudo apt-get install npm 
-```
-
-After installation, you can check if Node.js and npm are installed correctly by opening a terminal window and running:
-
-```bash
-node -v
-npm -v
-```
-
-These commands should display the installed versions of Node.js and npm, respectively.
-
-### **Installing Electron**
-
-Once you have Node.js and npm installed, you can install Electron globally on your system by running:
-
-```bash
-sudo npm install -g electron
-```
-
 ### **Hotspot Shield CLI**
 
 The application will interact with Hotspot Shield via its command-line interface (CLI). Ensure that Hotspot Shield is installed on your system and that you have access to the CLI.
-
----
-
-## **Setup and Initialization**
-
-Create a new directory for your project, navigate into it and initialize a new Node.js application:
-
-```bash
-git clone git@gitlab.com:hotspot-shield-ui/hotspot-shield-ui.git 
-cd hotspot-shield-ui
-npm install
-```
-
-Install Electron as a dev dependency in your project:
-
-```bash
-npm install electron --save-dev
-```
-
-```bash
-electron --version
-```
-
-Now, you can start the Electron application by running:
-
-```bash
-npm start
-```
-
-This command will start the Electron runtime and launch your application.
-
----
-
-## **Hotspot Shield CLI Commands**
 
 These are the Hotspot Shield CLI commands we will use:
 
@@ -99,28 +38,18 @@ These are the Hotspot Shield CLI commands we will use:
 - **`hotspotshield disconnect`**: Disconnect or change to another VPN location.
 - **`hotspotshield connect`**: Connect to the most recent location.
 - **`hotspotshield status`**: Check if the VPN is running.
-
----
-
-## **Electron Application Structure**
-
-Our Electron application will have the following structure:
-
-```
-my-electron-app/
-├── package.json
-├── main.js
-└── src/
-    ├── index.html
-    ├── login.html
-    ├── login.js
-    └── index.js
-```
-
 ---
 
 ## **Packaging and Distribution**
+Installation guide 
+Clone the repository then run 
+```bash
+# To install node dependencies 
+npm install 
 
+# To start the application 
+npm start
+```
 <aside>
 ⚠️ Electron Packager requires Node >= 14.17.5.
 
